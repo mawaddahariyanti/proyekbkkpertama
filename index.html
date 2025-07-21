@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BKK SMKN 13 MEDAN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+  <img src="images/bkk.jpeg" alt="Logo SMKN 13" class="logo-img">
+  <span>BKK SMKN 13 Medan</span>
+</div>
+
+    <ul class="nav-links">
+      
+
+<li class="dropdown">
+  <a href="#">Profil <i class="fa fa-caret-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="tentangsekolah.html" target="_blank">Tentang Sekolah</a></li>
+    <li><a href="visi2.html" target="_blank">Visi & Misi</a></li>
+   <li><a href="kepala sekolah.html" target="_blank">Kepala Sekolah</a></li>
+    <li><a href="program keahlian.html" target="_blank">Program Keahlian</a></li>
+  </ul>
+</li>
+
+
+
+      <li><a href="#Tentang-Kami">Tentang Kami</a></li>
+      <li><a href="#Perusahaan">Perusahaan</a></li>
+      <li><a href="#Informasi">Informasi</a></li>
+      <li><a href="#Lowongan">Lowongan</a></li>
+    </ul>
+  </nav>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow">
+    <div class="slide">
+      <img src="images/foto1.jpg" alt="Slide 1">
+      <div class="caption">Selamat Datang di BKK SMK N 13 Medan</div>
+    </div>
+    <div class="slide">
+      <img src="images/foto2.jpg" alt="Slide 2">
+      <div class="caption">Terpercaya</div>
+    </div>
+    <div class="slide">
+      <img src="images/foto3.jpg" alt="Slide 3">
+      <div class="caption">Fleksibel</div>
+    </div>
+  </div>
+
+  <!-- Tentang Kami -->
+  <section id="Tentang-Kami" class="about-section">
+    <div class="about-row">
+      <div class="about-image">
+        <img src="images/perusahaan.jpg" alt="perusahaan">
+      </div>
+      <div class="about-text">
+        <h2>Tentang Kami</h2>
+        <p>Bursa Kerja Khusus (BKK) adalah suatu lembaga yang dibentuk di tingkat satuan pendidikan (biasanya di SMK atau sekolah kejuruan) yang bertugas sebagai perantara atau fasilitator antara pencari kerja (lulusan sekolah) dengan dunia usaha dan dunia industri (DU/DI).</p>
+        <p>Dengan tim profesional dan berpengalaman, kami berkomitmen memberikan layanan yang berkualitas tinggi dan sesuai dengan perkembangan zaman.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tujuan Bursa Kerja Khusus -->
+  <section class="bkk-section">
+    <div class="about-row reverse">
+      <div class="about-image">
+        <img src="images/bkk.jpeg" alt="bkk">
+      </div>
+      <div class="about-text">
+        <h2>Tujuan Bursa Kerja Khusus (BKK)</h2>
+        <ul>
+          <li>Menjembatani lulusan dengan dunia kerja melalui informasi lowongan yang akurat.</li>
+          <li>Menjalin kerja sama dengan perusahaan untuk penyaluran tenaga kerja.</li>
+          <li>Meningkatkan daya saing lulusan melalui pelatihan dan pembekalan kerja.</li>
+          <li>Memberikan pelayanan penempatan kerja yang cepat dan tepat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perusahaan Mitra -->
+<section id="Perusahaan" class="company-section">
+  <h2 class="section-title">Perusahaan Mitra SMKN 13 Medan</h2>
+  <p class="section-subtitle">Beberapa perusahaan yang bekerja sama dengan kami:</p>
+  
+  <div class="company-list">
+    <div class="company-item">
+      <img src="images/telkom.png" alt="PT Telkom Indonesia">
+      <p>PT Telkom Indonesia</p>
+    </div>
+    <div class="company-item">
+      <img src="images/pln.png" alt="PT PLN">
+      <p>PT PLN (Persero)</p>
+    </div>
+    <div class="company-item">
+      <img src="images/indomaret.png" alt="PT Indomaret">
+      <p>PT Indomaret</p>
+    </div>
+    <div class="company-item">
+      <img src="images/pelindo.png" alt="PT Pelindo">
+      <p>PT Pelindo</p>
+    </div>
+    <div class="company-item">
+      <img src="images/k3.jpg" alt="BUMN Indonesia">
+      <p>BUMN</p>
+    </div>
+    <!-- Tambahkan lebih banyak jika perlu -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Slideshow script dipindahkan ke bawah sebelum </body> -->
+  <script>
+    // JavaScript untuk slideshow otomatis
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+
+    showSlides();
+  </script>
+
+</body>
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; Copyright 2025 . Designed by Mawaddah Ariyanti. All rights reserved v5.0.0.</p>
+</footer>
+
+</html>
